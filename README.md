@@ -1,5 +1,5 @@
 # workplace-communication-activity
-📘 Pseudo Code: Programming Firm Communication Using Operational Terms
+#📘 Pseudo Code: Programming Firm Communication Using Operational Terms
 
 # identify and fix the original operational term for each scrambled word
 
