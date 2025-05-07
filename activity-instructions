@@ -1,0 +1,100 @@
+# 💼 Workplace Communication Activity Using Basic Operational Terms
+
+Welcome to this GitHub-based learning activity!  
+In this task, you will practice using basic workplace communication terms commonly used in tech, programming, and business settings.
+
+---
+
+## 📚 Objectives
+
+- Practice professional communication using operational terms.
+- Learn to collaborate using GitHub by commenting, editing, and submitting pull requests.
+- Familiarize yourself with technical jargon used in real workplace situations.
+
+---
+
+## 📘 Step-by-Step Instructions
+
+### 1️⃣ Fork and Clone (or Use the Web Editor)
+
+- Click the **Fork** button to make your own copy of this repository.
+- Optionally, clone it to your local machine using:
+git clone https://github.com/your-username/repo-name.git
+
+---
+
+### 2️⃣ Read the Terms List
+
+Go through the list of workplace terms in the `terms.md` file in this repo.  
+Understand the meaning and examples of terms like `deliverable`, `workflow`, `KPI`, `ping`, and more.
+
+---
+
+### 3️⃣ Choose and Complete a Task
+
+Open the `responses.md` file and add your answer below any of the following:
+
+#### Task 1: Scenario-Based Email  
+Write a short email to your team or manager using at least **3 workplace terms**.
+
+#### Task 2: Problem-Solving Dialogue  
+Write a short dialogue between two team members trying to fix a system issue using proper terms like `escalation`, `hotfix`, or `downtime`.
+
+#### Task 3: Collaborative Planning  
+Describe a simple project plan using terms like `milestone`, `deadline`, `workflow`, and `SOP`.
+
+> ✍️ Use clear, polite, and professional language.
+
+---
+
+### 4️⃣ Commit Your Changes
+
+If editing via GitHub:
+- Click the **Edit** (✏️) icon on `responses.md`.
+- Add your work below the task description.
+- Scroll down and write a commit message (e.g., "Added my email response for Task 1").
+- Click **Propose Changes**.
+
+---
+
+### 5️⃣ Create a Pull Request
+
+- On the next screen, click **“Create Pull Request.”**
+- Add a short title and description of your response.
+- Wait for feedback and review from your instructor or peers.
+
+---
+
+### 6️⃣ Review and Collaborate
+
+- Visit the **Pull Requests** tab.
+- Click on a classmate’s pull request.
+- Leave **comments**, **questions**, or **suggestions** using GitHub’s review tools.
+
+---
+
+## ✅ Example Terms to Use
+
+- **Deadline**, **Deliverable**, **Milestone**, **Workflow**
+- **Ping**, **Bug**, **Hotfix**, **Sandbox**, **Prod**
+- **KPI**, **Escalation**, **Compliance**, **Patch**, **Legacy**
+- **2FA**, **Encryption**, **Hash**, **Whitelist**, **Root Access**
+
+---
+
+## 🗂️ Files to Work On
+
+- [`terms.md`](./terms.md) – Full list of terms and example sentences  
+- [`responses.md`](./responses.md) – Where you’ll write your answers
+
+---
+
+## 💬 Questions?
+
+Use the **Issues** tab if you have questions or suggestions.  
+Ping your instructor by tagging them in a comment like this:  
+`@instructor-username Can you review my pull request?`
+
+---
+
+Happy learning and collaborating!
