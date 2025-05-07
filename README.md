@@ -5,6 +5,7 @@
 
 BEGIN
     FUNCTION MorningSyncMeeting()
+        
         PRINT "Team Lead: Good morning team, let's review current system status."
 
         PRINT "SysAdmin: ALERT! The email server is NWDO since 2:00 AM."
