@@ -8,7 +8,7 @@ BEGIN
         
         PRINT "Team Lead: Good morning team, let's review current system status."
 
-        PRINT "SysAdmin: ALERT! The email server is NWDO since 2:00 AM."
+        PRINT "SysAdmin: ALERT! The email server is DOWN since 2:00 AM."
         PRINT "Developer A: Understood. Let me GNPI the infra team for support."
 
         PRINT "QA Tester: There’s a GUB affecting the checkout button on mobile."
