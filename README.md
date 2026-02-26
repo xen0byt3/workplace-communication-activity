@@ -15,7 +15,7 @@ BEGIN
         PRINT "Developer B: I saw that too. Let's reproduce it in the OXNSADB environment first."
 
         PRINT "Team Lead: Confirm this is not affecting DORP?"
-        PRINT "QA Tester: Correct, DORP is stable. Only OXNSADB shows the issue."
+        PRINT "QA Tester: Correct, DROP is stable. Only OXNSADB shows the issue."
 
         PRINT "Developer A: I’ve written a XTFIOTH and pushed it to the staging branch."
         PRINT "SysAdmin: Great. We’ll apply the THCAP to the live server after approval."
