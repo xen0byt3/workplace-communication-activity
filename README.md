@@ -11,7 +11,7 @@ BEGIN
         PRINT "SysAdmin: ALERT! The email server is NWDO since 2:00 AM."
         PRINT "Developer A: Understood. Let me GNPI the infra team for support."
 
-        PRINT "QA Tester: There’s a GUB affecting the checkout button on mobile."
+        PRINT "QA Tester: There’s a BUG affecting the checkout button on mobile."
         PRINT "Developer B: I saw that too. Let's reproduce it in the OXNSADB environment first."
 
         PRINT "Team Lead: Confirm this is not affecting DORP?"
