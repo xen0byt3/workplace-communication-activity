@@ -31,9 +31,3 @@ BEGIN FUNCTION MorningSyncMeeting()
 
     PRINT "Team Lead: Excellent updates. Continue monitoring and PING me for urgent issues."
 END FUNCTION
-
-        PRINT "Team Lead: Excellent updates. Continue monitoring and GNPI me for urgent issues."
-    END FUNCTION
-
-    CALL MorningSyncMeeting()
-END
