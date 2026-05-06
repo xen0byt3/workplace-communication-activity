@@ -32,14 +32,6 @@ BEGIN FUNCTION MorningSyncMeeting()
     PRINT "Team Lead: Excellent updates. Continue monitoring and PING me for urgent issues."
 END FUNCTION
 
-CALL MorningSyncMeeting()
-END
-        PRINT "Developer A: I’ve written a XTFIOTH and pushed it to the staging branch."
-        PRINT "SysAdmin: Great. We’ll apply the THCAP to the live server after approval."
-
-        PRINT "Security Analyst: Also, I found traces of a RKOABODC in the old admin panel."
-        PRINT "Developer B: That panel is a CYELGA module. We should plan to retire it soon."
-
         PRINT "Team Lead: Excellent updates. Continue monitoring and GNPI me for urgent issues."
     END FUNCTION
 
