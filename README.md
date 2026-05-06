@@ -2,29 +2,39 @@
 #📘 Pseudo Code: Programming Firm Communication Using Operational Terms
 
 # identify and fix the original operational term for each scrambled word
+Fixed Operational Terms (Unscrambled)
+NWDO → DOWN
+GNPI → PING
+GUB → BUG
+OXNSADB → SANDBOX
+DORP → PROD
+XTFIOTH → HOTFIX
+THCAP → PATCH
+RKOABODC → BACKDOOR
+CYELGA → LEGACY
 
-BEGIN
-    FUNCTION MorningSyncMeeting()
-        
-        PRINT "Team Lead: Good morning team, let's review current system status."
+Corrected Pseudo Code:
+BEGIN FUNCTION MorningSyncMeeting()
 
-        PRINT "SysAdmin: ALERT! The email server is NWDO since 2:00 AM."
-        PRINT "Developer A: Understood. Let me GNPI the infra team for support."
+    PRINT "Team Lead: Good morning team, let's review current system status."
 
-        PRINT "QA Tester: There’s a GUB affecting the checkout button on mobile."
-        PRINT "Developer B: I saw that too. Let's reproduce it in the OXNSADB environment first."
+    PRINT "SysAdmin: ALERT! The email server is DOWN since 2:00 AM."
+    PRINT "Developer A: Understood. Let me PING the infra team for support."
 
-        PRINT "Team Lead: Confirm this is not affecting DORP?"
-        PRINT "QA Tester: Correct, DORP is stable. Only OXNSADB shows the issue."
+    PRINT "QA Tester: There’s a BUG affecting the checkout button on mobile."
+    PRINT "Developer B: I saw that too. Let's reproduce it in the SANDBOX environment first."
 
-        PRINT "Developer A: I’ve written a XTFIOTH and pushed it to the staging branch."
-        PRINT "SysAdmin: Great. We’ll apply the THCAP to the live server after approval."
+    PRINT "Team Lead: Confirm this is not affecting PROD?"
+    PRINT "QA Tester: Correct, PROD is stable. Only SANDBOX shows the issue."
 
-        PRINT "Security Analyst: Also, I found traces of a RKOABODC in the old admin panel."
-        PRINT "Developer B: That panel is a CYELGA module. We should plan to retire it soon."
+    PRINT "Developer A: I’ve written a HOTFIX and pushed it to the staging branch."
+    PRINT "SysAdmin: Great. We’ll apply the PATCH to the live server after approval."
 
-        PRINT "Team Lead: Excellent updates. Continue monitoring and GNPI me for urgent issues."
-    END FUNCTION
+    PRINT "Security Analyst: Also, I found traces of a BACKDOOR in the old admin panel."
+    PRINT "Developer B: That panel is a LEGACY module. We should plan to retire it soon."
 
-    CALL MorningSyncMeeting()
+    PRINT "Team Lead: Excellent updates. Continue monitoring and PING me for urgent issues."
+END FUNCTION
+
+CALL MorningSyncMeeting()
 END
