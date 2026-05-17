@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class PasswordSystem {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        String correctPassword = "123";
+        boolean isLoggedIn = false;
+        for (int i = 1; i <= 3; i++) {
+            System.out.print("Enter password: ");
+            String password = input.nextLine();
+
+            if (password.equals(correctPassword)) {
+                System.out.println("Access Granted!\n");
+                isLoggedIn = true;
+                break;
+            } else {
+                if (i == 1) {
+                    System.out.println("Attempt 1! Incorrect PIN");
+                } else if (i == 2) {
+                    System.out.println("Attempt 2! Warning: Last attempt remaining");
+                } else {
+                    System.out.println("Attempt 3! Card Blocked.");
+                    System.out.println("Please contact your bank.");
+                    input.close();
+                    return;
+                }
+            }
+        }
+        double balance = 1000;
+        int choice;
+        while (isLoggedIn) {
+            System.out.println("\n=== ATM MENU ===");
+            System.out.println("1 - Check Balance");
+            System.out.println("2 - Deposit");
+            System.out.println("3 - Withdraw");
+            System.out.println("4 - Exit");
+            System.out.print("Choose option: ");
+            choice = input.nextInt();
+            switch (choice) {
+                    case 1:
+                    System.out.println("Current Balance: " + balance);
+                    break;
+
+                   case 2:
+                    System.out.print("Enter deposit amount: ");
+                    double deposit = input.nextDouble();
+                    balance += deposit;
+                    System.out.println("Deposit successful!");
+                    break;
+
+                    case 3:
+                    System.out.print("Enter withdraw amount: ");
+                    double withdraw = input.nextDouble();
+                    if (withdraw <= balance) {
+                        balance -= withdraw;
+                        System.out.println("Withdrawal successful!");
+                    } else {
+                        System.out.println("Insufficient Balance");
+                    }
+                    break;
+                    case 4:
+                    System.out.println("Thank you for using ATM!");
+                    isLoggedIn = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+        }
+        input.close();
+    }
+}

@@ -1,0 +1,169 @@
+import java.util.Scanner;
+
+public class zodiac {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String month;
+        int day;
+        System.out.print("Enter Month: ");
+        month = input.nextLine();
+        System.out.print("Enter Day: ");
+        day = input.nextInt();
+        if (month.equalsIgnoreCase("March"))
+            {
+            if (day >= 21 && day <= 31) {
+                System.out.println("Aries (Ram):");
+                System.out.println("Magiging confident ka today sa coding… hanggang sa makita mo ang error na:");
+                System.out.println("missing ; sa line 2.");
+            }
+            else if (day >= 1 && day <= 20) {
+                System.out.println("Pisces (Fish):");
+                System.out.println("Magiging smooth ang coding mo today…");
+                System.out.println("hanggang sa ma-delete mo ang buong file by accident.");
+            }
+            }
+        else if (month.equalsIgnoreCase("April"))
+          {
+            if (day >= 1 && day <= 19) {
+                System.out.println("Aries (Ram):");
+                System.out.println("Magiging confident ka today sa coding… hanggang sa makita mo ang error na:");
+                System.out.println("missing ; sa line 2.");
+            } else if (day >= 20 && day <= 30) {
+                System.out.println("Taurus (Bull):");
+                System.out.println("Makakagawa ka ng program na gumagana…");
+                System.out.println("pero hindi mo na alam kung paano mo siya napaandar.");
+            }
+        }
+        else if (month.equalsIgnoreCase("May")) 
+          {
+            if (day >= 1 && day <= 20) {
+                System.out.println("Taurus (Bull):");
+                System.out.println("Makakagawa ka ng program na gumagana…");
+                System.out.println("pero hindi mo na alam kung paano mo siya napaandar.");
+            } else if (day >= 21 && day <= 31) {
+                System.out.println("Gemini (Twins):");
+                System.out.println("May dalawang tab kang bukas:");
+                System.out.println("Java code");
+                System.out.println("StackOverflow");
+                System.out.println("Guess mo kung saan ka mas nakatingin today.");
+            }
+        }
+        else if (month.equalsIgnoreCase("June")) 
+          {
+            if (day >= 1 && day <= 21) {
+                System.out.println("Gemini (Twins):");
+                System.out.println("May dalawang tab kang bukas:");
+                System.out.println("Java code");
+                System.out.println("StackOverflow");
+                System.out.println("Guess mo kung saan ka mas nakatingin today.");
+            } else if (day >= 22 && day <= 30) {
+                System.out.println("Cancer (Crab):");
+                System.out.println("Akala mo tama na ang code mo…");
+                System.out.println("pero may lalabas na bagong error pagkatapos mong ayusin yung isa.");
+            }
+        }
+        else if (month.equalsIgnoreCase("July")) 
+          {
+            if (day >= 1 && day <= 22) {
+                System.out.println("Cancer (Crab):");
+                System.out.println("Akala mo tama na ang code mo…");
+                System.out.println("pero may lalabas na bagong error pagkatapos mong ayusin yung isa.");
+            } else if (day >= 23 && day <= 31) {
+                System.out.println("Leo (Lion):");
+                System.out.println("Tatawagin ka ng instructor para i-explain ang code mo…");
+                System.out.println("sasabihin mo: “Sir gumana siya bigla.”");
+            }
+        }
+        else if (month.equalsIgnoreCase("August"))
+            {
+            if (day >= 1 && day <= 22) {
+                System.out.println("Leo (Lion):");
+                System.out.println("Tatawagin ka ng instructor para i-explain ang code mo…");
+                System.out.println("sasabihin mo: “Sir gumana siya bigla.”");
+            } else if (day >= 23 && day <= 31) {
+                System.out.println("Virgo (Virgin):");
+                System.out.println("Ikaw ang magiging class hero today…");
+                System.out.println("dahil ikaw lang ang nakakaalam kung saan ilalagay ang Scanner.");
+            }
+        }
+        else if (month.equalsIgnoreCase("September")) {
+            if (day >= 1 && day <= 22) {
+                System.out.println("Virgo (Virgin):");
+                System.out.println("Ikaw ang magiging class hero today…");
+                System.out.println("dahil ikaw lang ang nakakaalam kung saan ilalagay ang Scanner.");
+            } else if (day >= 23 && day <= 30) {
+                System.out.println("Libra (Balance):");
+                System.out.println("Balanced ang buhay mo today:");
+                System.out.println("50% debugging");
+                System.out.println("50% staring sa screen wondering bakit ayaw gumana.");
+            }
+        }
+        else if (month.equalsIgnoreCase("October")) {
+            if (day >= 1 && day <= 23) {
+                System.out.println("Libra (Balance):");
+                System.out.println("Balanced ang buhay mo today:");
+                System.out.println("50% debugging");
+                System.out.println("50% staring sa screen wondering bakit ayaw gumana.");
+            } else if (day >= 24 && day <= 31) {
+                System.out.println("Scorpius (Scorpion):");
+                System.out.println("May matutuklasan kang bagong kaibigan sa coding:");
+                System.out.println("NullPointerException");
+            }
+        }
+        else if (month.equalsIgnoreCase("November")) 
+          {
+            if (day >= 1 && day <= 21) {
+                System.out.println("Scorpius (Scorpion):");
+                System.out.println("May matutuklasan kang bagong kaibigan sa coding:");
+                System.out.println("NullPointerException");
+            } else if (day >= 22 && day <= 30) {
+                System.out.println("Sagittarius (Archer):");
+                System.out.println("Mabilis ka mag-type ng code today…");
+                System.out.println("pero mas mabilis ang paglabas ng errors.");
+            }
+        }
+        else if (month.equalsIgnoreCase("December")) 
+          {
+            if (day >= 1 && day <= 21) {
+                System.out.println("Sagittarius (Archer):");
+                System.out.println("Mabilis ka mag-type ng code today…");
+                System.out.println("pero mas mabilis ang paglabas ng errors.");
+            } else if (day >= 22 && day <= 31) {
+                System.out.println("Capricornus (Goat):");
+                System.out.println("Makaka-commit ka sa GitHub…");
+                System.out.println("pero nakalimutan mong i-test ang program.");
+                System.out.println("Good luck sa pull request.");
+            }
+        }
+        else if (month.equalsIgnoreCase("January"))
+          {
+            if (day >= 1 && day <= 19) {
+                System.out.println("Capricornus (Goat):");
+                System.out.println("Makaka-commit ka sa GitHub…");
+                System.out.println("pero nakalimutan mong i-test ang program.");
+                System.out.println("Good luck sa pull request.");
+            } else if (day >= 20 && day <= 31) {
+                System.out.println("Aquarius (Water Bearer):");
+                System.out.println("Magkakaroon ka ng bright idea today…");
+                System.out.println("pagkatapos mong uminom ng 3 kape habang nagco-code.");
+            }
+          }
+        else if (month.equalsIgnoreCase("February"))
+            {
+            if (day >= 1 && day <= 18) {
+                System.out.println("Aquarius (Water Bearer):");
+                System.out.println("Magkakaroon ka ng bright idea today…");
+                System.out.println("pagkatapos mong uminom ng 3 kape habang nagco-code.");
+            } else if (day >= 19 && day <= 29) {
+                System.out.println("Pisces (Fish):");
+                System.out.println("Magiging smooth ang coding mo today…");
+                System.out.println("hanggang sa ma-delete mo ang buong file by accident.");
+            }
+        }
+        else {
+            System.out.println("Invalid month input.");
+        }
+
+        input.close();
+    }
+}

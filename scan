@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+
+public class scan {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();
+        System.out.print("Enter your course: ");
+        String course = input.nextLine();
+        System.out.print("Enter your birthday: ");
+        String bday = input.nextLine();
+        System.out.print("Enter your home towm: ");
+        String homto = input.nextLine();
+        System.out.print("Enter your status: ");
+        String stat = input.nextLine();
+        System.out.print("Enter your profession: ");
+        String prof = input.nextLine();
+        System.out.println("Hello, " + name + ".");
+        System.out.println("Welcome to, " + course + ".");
+        System.out.println("We will be recording you as our birth month celebrant. Your birthday is, " + bday + ".");
+        System.out.println("Here are some of your personal information ");
+        System.out.println("Hometown , " + homto + "! Welcome to Java programming.");
+        System.out.println("Profession , " + prof + ".");
+        System.out.println("Status, " + stat + ".");
+        input.close();
+    }
+
+}

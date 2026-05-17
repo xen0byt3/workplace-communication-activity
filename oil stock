@@ -1,0 +1,154 @@
+import java.util.Scanner;
+
+class OilSupply {
+
+    private String oilType;
+    private double liters;
+    private double dailyUsage;
+
+    public OilSupply(String oilType, double liters, double dailyUsage) {
+        this.oilType = oilType;
+        this.liters = liters;
+        this.dailyUsage = dailyUsage;
+    }
+
+    public double getDaysSupply() {
+        return liters / dailyUsage;
+    }
+
+    public void displaySupply() {
+        double days = getDaysSupply();
+        double reorder = (60 * dailyUsage) - liters;
+
+        System.out.println("Oil Type      : " + oilType);
+        System.out.printf("Liters        : %.2f L\n", liters);
+        System.out.printf("Daily Usage   : %.2f L/day\n", dailyUsage);
+        System.out.printf("Days Supply   : %.2f days\n", days);
+
+        if (days < 20) 
+        {
+            System.out.println("Status        : RED (CRITICAL)");
+        } else if (days <= 40) 
+        {
+            System.out.println("Status        : YELLOW (WARNING)");
+        } else {
+            System.out.println("Status        : SAFE");
+        }
+
+        if (reorder > 0)
+         {
+            System.out.printf("Reorder Suggestion: Add %.2f L\n", reorder);
+        } else {
+            System.out.println("Reorder Suggestion: Supply is sufficient");
+        }
+    }
+
+    public void addSupply(double amount) {
+        liters += amount;
+        System.out.println("Supply added successfully!");
+    }
+
+    public void reduceSupply(double amount) {
+        if (amount <= liters) {
+            liters -= amount;
+            System.out.println("Supply reduced successfully!");
+        } else {
+            System.out.println("Not enough supply!");
+        }
+    }
+}
+
+public class Main {
+
+
+    public static OilSupply selectOil(int choice, OilSupply o1, OilSupply o2, OilSupply o3, OilSupply o4, OilSupply o5) {
+        if (choice == 1) return o1;
+        else if (choice == 2) return o2;
+        else if (choice == 3) return o3;
+        else if (choice == 4) return o4;
+        else if (choice == 5) return o5;
+        else return null;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        OilSupply oil1 = new OilSupply("Diesel", 5000000, 99000);
+        OilSupply oil2 = new OilSupply("Gasoline", 5200000, 101000);
+        OilSupply oil3 = new OilSupply("Kerosene", 3000000, 44400);
+        OilSupply oil4 = new OilSupply("Jet Fuel", 4000000, 69000);
+        OilSupply oil5 = new OilSupply("LPG", 2000000, 69000);
+
+        int choice;
+
+        do {
+            System.out.println("\n=== COUNTRY OIL SUPPLY SYSTEM ===");
+            System.out.println("1. View Supply");
+            System.out.println("2. Add Supply");
+            System.out.println("3. Reduce Supply");
+            System.out.println("4. Exit");
+            System.out.print("Enter choice: ");
+            choice = input.nextInt();
+
+            switch (choice) {
+
+                case 1:
+                    oil1.displaySupply();
+                    oil2.displaySupply();
+                    oil3.displaySupply();
+                    oil4.displaySupply();
+                    oil5.displaySupply();
+                    break;
+
+                case 2:
+                    System.out.print("Select Oil (1-5): ");
+                    int addChoice = input.nextInt();
+
+                    OilSupply selectedAdd = selectOil(addChoice, oil1, oil2, oil3, oil4, oil5);
+
+                    if (selectedAdd != null) {
+                        System.out.print("Enter liters to add: ");
+                        double add = input.nextDouble();
+                        selectedAdd.addSupply(add);
+                    } else {
+                        System.out.println("Invalid oil selection!");
+                    }
+                    break;
+
+                case 3:
+                    System.out.print("Select Oil (1-5): ");
+                    int reduceChoice = input.nextInt();
+
+                    OilSupply selectedReduce = selectOil(reduceChoice, oil1, oil2, oil3, oil4, oil5);
+
+                    if (selectedReduce != null) {
+                        System.out.print("Enter liters to reduce: ");
+                        double reduce = input.nextDouble();
+                        selectedReduce.reduceSupply(reduce);
+                    } else {
+                        System.out.println("Invalid oil selection!");
+                    }
+                    break;
+
+                case 4:
+                    System.out.print("Are you sure you want to exit? [Y/N]: ");
+                    char confirm = input.next().toUpperCase().charAt(0);
+
+                    if (confirm == 'Y') {
+                        System.out.println("Exiting program...");
+                        return;
+                    } else if (confirm == 'N') {
+                        System.out.println("Returning to menu...");
+                    } else {
+                        System.out.println("Invalid input! Returning to menu...");
+                    }
+                    break;
+
+                default:
+                    System.out.println("Invalid choice!");
+            }
+
+        } while (true);
+    }
+}

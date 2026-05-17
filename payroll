@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+public class payroll {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number of days worked: ");
+        double numd = input.nextDouble();
+
+        System.out.print("Enter rate per day: ");
+        double rate = input.nextDouble();
+
+        System.out.print("Enter number of overtime hrs: ");
+        double ot = input.nextDouble();
+
+        System.out.print("Enter rate per overtime hr: ");
+        double oh = input.nextDouble();
+
+        System.out.print("Enter additional allowance: ");
+        double alw = input.nextDouble();
+
+        System.out.println("\nEnter deductions:");
+
+        System.out.print("SSS/GSIS: ");
+        double sss = input.nextDouble();
+
+        System.out.print("Pag-ibig: ");
+        double pbg = input.nextDouble();
+
+        System.out.print("Philhealth: ");
+        double ph = input.nextDouble();
+
+        System.out.print("Cash Advance: ");
+        double ca = input.nextDouble();
+
+        System.out.print("Cash bond: ");
+        double cb = input.nextDouble();
+
+        System.out.print("Other Deductions: ");
+        double od = input.nextDouble();
+
+        // Calculations
+        double salary = numd * rate;
+        double otp = ot * oh;
+        double gross = salary + otp + alw;
+
+        double deduct = sss + pbg + ph + ca + cb + od;
+
+        double tax;
+        if (gross <= 10000) {
+            tax = gross * 0.05;
+        } else if (gross <= 20000) {
+            tax = gross * 0.10;
+        } else {
+            tax = gross * 0.15;
+        }
+
+        double totalDeduction = deduct + tax;
+        double netPay = gross - totalDeduction;
+
+        // Output
+        System.out.println("\n--- PAYROLL SUMMARY ---");
+        System.out.println("Regular Income: " + salary);
+        System.out.println("Overtime Income: " + otp);
+        System.out.println("Allowance: " + alw);
+        System.out.println("Gross Pay: " + gross);
+        System.out.println("Withholding Tax: " + tax);
+        System.out.println("Other Deductions: " + deduct);
+        System.out.println("Total Deductions: " + totalDeduction);
+        System.out.println("Net Pay: " + netPay);
+
+        input.close();
+    }
+}

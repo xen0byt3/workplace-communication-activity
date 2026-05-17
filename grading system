@@ -1,0 +1,152 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int choice = 0;
+
+        while (choice != 2) {
+
+            System.out.println("\n===== MENU =====");
+            System.out.println("1 - Start Student Grading System");
+            System.out.println("2 - Exit");
+            System.out.print("Enter choice: ");
+            choice = input.nextInt();
+            input.nextLine(); // clear buffer
+
+            switch (choice) {
+
+                case 1:
+                    System.out.print("Enter Student No.: ");
+                    String studentNo = input.nextLine();
+
+                    System.out.print("Enter Student Name: ");
+                    String studentName = input.nextLine();
+
+                    System.out.print("Enter Subject: ");
+                    String subject = input.nextLine();
+
+                    System.out.print("Enter Prelim Grade: ");
+                    double prelim = input.nextDouble();
+
+                    System.out.print("Enter Midterm Grade: ");
+                    double midterm = input.nextDouble();
+
+                    System.out.print("Enter Pre-final Grade: ");
+                    double prefinal = input.nextDouble();
+
+                    System.out.print("Enter Final Grade: ");
+                    double finals = input.nextDouble();
+
+
+                    int completed = 0;
+                    double sum = 0;
+
+                    double highest = prelim;
+                    double lowest = prelim;
+
+                    double[] grades = {prelim, midterm, prefinal, finals};
+
+                    for (int i = 0; i < grades.length; i++) {
+
+                        if (grades[i] > 0)
+                        {
+                            completed++;
+                        }
+
+                        sum += grades[i];
+
+                        if (grades[i] > highest)
+                        {
+                            highest = grades[i];
+                        }
+
+                        if (grades[i] < lowest)
+                        {
+                            lowest = grades[i];
+                        }
+                    }
+
+                    double average = sum / 4;
+
+                    String academicRemarks;
+                    if (completed == 4) {
+                        academicRemarks = "Complete!";
+                    } else if (completed == 0) {
+                        academicRemarks = "Dropped!";
+                    } else {
+                        academicRemarks = "Incomplete!";
+                    }
+
+                    double rating = 0;
+                    String finalRemarks = "";
+
+                    if (average == 0) {
+                        finalRemarks = "Dropped";
+                    } else {
+                        if (average > 100) {
+                            finalRemarks = "Out of Range";
+                        } else {
+                            if (average >= 98) {
+                                rating = 1.00;
+                            } else if (average >= 95) {
+                                rating = 1.25;
+                            } else if (average >= 92) {
+                                rating = 1.50;
+                            } else if (average >= 89) {
+                                rating = 1.75;
+                            } else if (average >= 86) {
+                                rating = 2.00;
+                            } else if (average >= 83) {
+                                rating = 2.25;
+                            } else if (average >= 80) {
+                                rating = 2.50;
+                            } else if (average >= 77) {
+                                rating = 2.75;
+                            } else if (average >= 75) {
+                                rating = 3.00;
+                            } else {
+                                rating = 5.00;
+                            }
+
+                            if (average >= 75) {
+                                finalRemarks = "Passed";
+                            } else {
+                                finalRemarks = "Failed";
+                            }
+                        }
+                    }
+
+                    System.out.println("\n===== RESULT =====");
+                    System.out.println("Student No.: " + studentNo);
+                    System.out.println("Student Name: " + studentName);
+                    System.out.println("Subject: " + subject);
+                    System.out.println("Academic Grading Period Completed: " + completed);
+                    System.out.println("Remarks: " + academicRemarks);
+                    System.out.println("Highest Grade: " + highest);
+                    System.out.println("Lowest Grade: " + lowest);
+                    System.out.printf("General Average: %.2f\n", average);
+
+                    if (average > 0 && average <= 100) {
+                        System.out.println("College Rating: " + rating);
+                    } else {
+                        System.out.println("College Rating: N/A");
+                    }
+
+                    System.out.println("Remarks: " + finalRemarks);
+                    break;
+
+                case 2:
+                    System.out.println("Program Ended.");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+        }
+
+        input.close();
+    }
+}
