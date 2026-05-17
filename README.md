@@ -3,6 +3,10 @@
 
 # identify and fix the original operational term for each scrambled word
 
+## Additional Terms
+
+- Patch: A small software update used to fix bugs or improve functionality.
+
 BEGIN
     FUNCTION MorningSyncMeeting()
         
