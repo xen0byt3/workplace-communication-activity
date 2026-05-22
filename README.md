@@ -2,7 +2,7 @@
 #📘 Pseudo Code: Programming Firm Communication Using Operational Terms
 
 # identify and fix the original operational term for each scrambled word
-
+#The term 'patch' means a small software update to fix an issue.
 BEGIN
     FUNCTION MorningSyncMeeting()
         
