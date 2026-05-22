@@ -24,7 +24,10 @@ BEGIN
         PRINT "Developer B: That panel is a CYELGA module. We should plan to retire it soon."
 
         PRINT "Team Lead: Excellent updates. Continue monitoring and GNPI me for urgent issues."
+
+        PRINT "The term 'patch' means a small software update to fix an issue.."
     END FUNCTION
 
     CALL MorningSyncMeeting()
+    
 END
