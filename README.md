@@ -7,6 +7,7 @@ BEGIN
     FUNCTION MorningSyncMeeting()
         
         PRINT "Team Lead: Good morning team, let's review current system status."
+        PRINT "The term 'patch' means a small software update to fix an issue."
 
         PRINT "SysAdmin: ALERT! The email server is NDOW since 2:00 AM."
         PRINT "Developer A: Understood. Let me GPNI the infra team for support."
@@ -28,3 +29,5 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+#Added definition for 'patch' in README
