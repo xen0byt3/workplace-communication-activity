@@ -8,8 +8,8 @@ BEGIN
         
         PRINT "Team Lead: Good morning team, let's review current system status."
 
-        PRINT "SysAdmin: ALERT! The email server is NDOW since 2:00 AM."
-        PRINT "Developer A: Understood. Let me GPNI the infra team for support."
+        PRINT "SysAdmin: ALERT! The email server is ASD since 2:00 AM."
+        PRINT "Developer A: Understood. Let meASD the infra team for support."
 
         PRINT "QA Tester: There’s a UGB affecting the checkout button on mobile."
         PRINT "Developer B: I saw that too. Let's reproduce it in the 0NASDBX environment first."
