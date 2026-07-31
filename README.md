@@ -22,7 +22,7 @@ BEGIN
 
         PRINT "Security Analyst: Also, I found traces of a RKOABODC in the old admin panel."
         PRINT "Developer B: That panel is a CYELGA module. We should plan to retire it soon."
-
+        Update README: Add definition for "patch"
         PRINT "Team Lead: Excellent updates. Continue monitoring and GNPI me for urgent issues."
     END FUNCTION
 
