@@ -30,12 +30,12 @@ BEGIN
 
     ## Added Operational Terms
 
-    PING: Contact someone quickly
-    PROD: Where software, website, or applications are actually running and accessible
-    BUG: Error or problem
-    HOTFIX: Quick update to fix an issue
-    PATCH: Small software update
-    BACKDOOR: Hidden method to access a system
-    LEGACY: Old system that is still in use
+    PING: Contact someone quickly.
+    PROD: Where software, website, or applications are actually running and accessible.
+    BUG: Error or problem.
+    HOTFIX: Quick update to fix an issue.
+    PATCH: Small software update.
+    BACKDOOR: Hidden method to access a system.
+    LEGACY: Old system that is still in use.
     
 END
