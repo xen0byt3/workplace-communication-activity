@@ -27,4 +27,5 @@ BEGIN
     END FUNCTION
 
     CALL MorningSyncMeeting()
+    "The term 'patch' means a small software update to fix an issue."
 END
