@@ -28,3 +28,7 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+### Additional Term
+
+**Patch** – A small software update released to fix a bug or security issue without changing the entire system.
