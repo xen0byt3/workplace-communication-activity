@@ -28,3 +28,15 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+## Glossary of Operational Terms mentioned
+
+- NDOW **DOWN** – system/service is not functioning  
+- GPNI **PING** – to contact someone for an update
+- UGB **BUG** – an error in the software
+- ONASDBX **SANDBOX** – a safe testing environment separate from production
+- DORP **PROD** – short for "Production," the live system
+- XTFIOTH **HOTFIX** – a quick fix for an urgent issue
+- THCAP **PATCH** – a small software update to fix an issue
+- RKOABODC **BACKDOOR** – an unauthorized hidden access point in a system
+- CYELGA **LEGACY** – an old system or module that is outdated
