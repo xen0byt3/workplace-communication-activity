@@ -27,4 +27,7 @@ BEGIN
     END FUNCTION
 
     CALL MorningSyncMeeting()
+
+    **Hacking:** The unauthorized access to or manipulation of a computer system, network, or data to bypass security controls.
+    
 END
