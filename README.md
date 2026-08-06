@@ -28,3 +28,5 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+# The term PATCH refers to the software program update that fix bugs or issues.
