@@ -22,9 +22,13 @@ BEGIN
 
         PRINT "Security Analyst: Also, I found traces of a RKOABODC in the old admin panel."
         PRINT "Developer B: That panel is a CYELGA module. We should plan to retire it soon."
+        
+        PRINT "Security Analyst: I recommend enabling ENCRYPTION for all sensitive data stored in the database."
+        PRINT "Team Lead: Good suggestion. Let's include ENCRYPTION in the next security update."
 
         PRINT "Team Lead: Excellent updates. Continue monitoring and GNPI me for urgent issues."
     END FUNCTION
 
     CALL MorningSyncMeeting()
+    
 END
