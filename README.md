@@ -16,6 +16,8 @@ BEGIN
 
         PRINT "Team Lead: Confirm this is not affecting DORP?"
         PRINT "QA Tester: Correct, DORP is stable. Only OXNSADB shows the issue."
+        
+            # The term "sandbox" refers to a safe, isolated virtual space used to run, test or experiment with code.
 
         PRINT "Developer A: I’ve written a XTFIOTH and pushed it to the staging branch."
         PRINT "SysAdmin: Great. We’ll apply the THCAP to the live server after approval."
