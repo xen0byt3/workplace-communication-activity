@@ -1,11 +1,17 @@
 # workplace-communication-activity
-#📘 Pseudo Code: Programming Firm Communication Using Operational Terms
 
-# identify and fix the original operational term for each scrambled word
+## Is your feature request related to a problem?
+A clear and concise description of what the problem is. Ex. "I'm always frustrated when [...]"
 
-BEGIN
-    FUNCTION MorningSyncMeeting()
-        
+## Describe the solution you'd like
+A clear and concise description of what you want to happen.
+
+## Describe alternatives you've considered
+A clear and concise description of any alternative solutions or features you've considered.
+
+## Additional context
+Add any other context or screenshots about the feature request here.
+  
         PRINT "Team Lead: Good morning team, let's review current system status."
 
         PRINT "SysAdmin: ALERT! The email server is NDOW since 2:00 AM."
