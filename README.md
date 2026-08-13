@@ -28,3 +28,14 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+Definitions
+ DOWN: Refers to a system, server, or service that is currently offline, inactive, or unavailable to users.
+ PING: To send a brief message or alert to a team member or user, or to send a network packet to check if a server or host is reachable.
+ BUG: An error, flaw, or fault in software that causes it to produce an unexpected or incorrect result.
+ SANDBOX: An isolated testing environment that allows developers to run programs or execute code without affecting live systems or production databases.
+ PROD (Production): The live, active environment where real users interact with software, applications, or systems.
+ HOTFIX: A quick code fix created and deployed urgently to solve an immediate, critical issue in production.
+ PATCH: A piece of software designed to update, repair, or improve a computer program or its supporting data.
+ BACKDOOR: A covert method of bypassing normal authentication or security controls to gain unauthorized access to a system.
+ LEGACY: Outdated software, hardware, or technology stack that remains in use, usually because it performs critical functions but is difficult to replace or update.
