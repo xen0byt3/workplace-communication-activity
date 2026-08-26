@@ -28,3 +28,5 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+        The term 'sandbox' refers to an isolated testing environment where code changes can be evaluated safely.
