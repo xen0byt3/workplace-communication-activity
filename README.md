@@ -28,3 +28,6 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+## Additional Terms
+
+The term "patch" means a small software update designed to fix a bug, security vulnerability, or other issue.
