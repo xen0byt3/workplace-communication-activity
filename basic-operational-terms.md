@@ -18,3 +18,8 @@ Legacy:	Old system/code still being used
 
 Down:	Not working or offline
 
+Sandbox: A safe, isolated environment used to test code without affecting the production system.
+
+Patch: A small software update designed to fix a bug or security issue.
+
+Ping: To contact a team member quickly for an update or clarification.
