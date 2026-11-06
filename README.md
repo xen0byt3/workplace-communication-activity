@@ -8,11 +8,11 @@ BEGIN
         
         PRINT "Team Lead: Good morning team, let's review current system status."
 
-        PRINT "SysAdmin: ALERT! The email server is NDOW since 2:00 AM."
-        PRINT "Developer A: Understood. Let me GPNI the infra team for support."
+        PRINT "SysAdmin: ALERT! The email server is DOWN since 2:00 AM."
+        PRINT "Developer A: Understood. Let me PING the infra team for support."
 
-        PRINT "QA Tester: There’s a UGB affecting the checkout button on mobile."
-        PRINT "Developer B: I saw that too. Let's reproduce it in the 0NASDBX environment first."
+        PRINT "QA Tester: There’s a BUG affecting the checkout button on mobile."
+        PRINT "Developer B: I saw that too. Let's reproduce it in the SANDBOX environment first."
 
         PRINT "Team Lead: Confirm this is not affecting DORP?"
         PRINT "QA Tester: Correct, DORP is stable. Only OXNSADB shows the issue."
