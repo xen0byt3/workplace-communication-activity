@@ -2,6 +2,7 @@
 #📘 Pseudo Code: Programming Firm Communication Using Operational Terms
 
 # identify and fix the original operational term for each scrambled word
+# Added definition for 'SIEM' in README
 
 BEGIN
     FUNCTION MorningSyncMeeting()
@@ -24,6 +25,7 @@ BEGIN
         PRINT "Developer B: That panel is a CYELGA module. We should plan to retire it soon."
 
         PRINT "Team Lead: Excellent updates. Continue monitoring and GNPI me for urgent issues."
+        PRINT "SIEM: Security Information and Event Management pipeline used for log collection and correlation."
     END FUNCTION
 
     CALL MorningSyncMeeting()
