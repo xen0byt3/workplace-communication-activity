@@ -28,3 +28,7 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+Operational Term: Patch
+
+A patch is a small software update used to fix bugs, correct errors, or improve an existing program.
