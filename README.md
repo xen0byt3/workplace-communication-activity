@@ -28,3 +28,6 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+
+An isolated virtual environment used to safely test or analyze suspicious files and malware without risking the main network.
+
