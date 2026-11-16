@@ -28,3 +28,4 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+Added glossary of operational terms to README
