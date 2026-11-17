@@ -28,3 +28,4 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+Added definition for 'patch' in README
