@@ -30,4 +30,4 @@ BEGIN
 END
 
 # add a sentence
-"The term 'BUG' means an error or problem.
+"The term 'BUG' means an error or problem."
