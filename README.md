@@ -28,3 +28,6 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+## Operational Terms
+
+### Patch
