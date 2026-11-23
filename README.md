@@ -28,3 +28,9 @@ BEGIN
 
     CALL MorningSyncMeeting()
 END
+Here are some other IT terms that are useful to know:
+Patch – An update that fixes a problem or bug in a software.
+Hotfix – A quick fix for an urgent problem.
+Sandbox – A safe place where developers can test their work.
+Ping – Sending a quick message to someone to ask for an update.
+Prod – The actual system that people are currently using.
